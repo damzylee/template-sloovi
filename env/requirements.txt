@@ -1,0 +1,10 @@
+flask
+datetime
+gunicorn
+flask_jwt_extended
+flask_bcrypt
+bson
+pymongo[tls,srv]
+flask_pymongo
+jsonschema
+python-dotenv
