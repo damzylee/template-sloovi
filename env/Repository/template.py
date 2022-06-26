@@ -10,7 +10,7 @@ load_dotenv()
 class TemplateRepository:
 
     def __init__(self):
-        mongoUrl = "mongodb+srv://damzylee:pythonExample2022@cluster0.rsm44.mongodb.net/?retryWrites=true&w=majority"
+        mongoUrl = os.environ.get('MONGO_URI')
         self.client = MongoClient(mongoUrl)
         self.db = self.client.template_database
         self.templates = self.db.template_collection

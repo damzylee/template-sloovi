@@ -43,4 +43,4 @@ def unauthorized_response(callback):
 application = app
    
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
